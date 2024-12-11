@@ -1,0 +1,45 @@
+@import url('global.css');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  padding: 16px;
+  background-color: --background-color;
+  width: -webkit-fill-available;
+  padding-top: 150px;
+}
+
+.logo {
+  width: 250px;
+  height: 70px;
+  margin-bottom: 32px;
+}
+
+#startButton {
+  padding: 12px 24px;
+  background-color: var(--color-brand);
+  border: none;
+  color: var(--always-white);
+  font: var(--label);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#startButton:hover {
+  background-color: var(--color-brand-hover);
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 32px;
+  }
+
+  #startButton {
+    width: 100%;
+    font-size: 14px;
+  }
+}
